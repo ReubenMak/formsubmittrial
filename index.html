@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>NEVAH</title>
+</head>
+<body>
+    <div class="wrapper1">
+        <div id="nav">
+            <ul class="navbar">
+                <li>
+                    <button class="nav__listitem" id="menub">MENU</button>
+                    <div id="dropdown111" class="list1">
+                        <button id="i1" class="listitem">ABOUT US</button>
+                        <button id="i2" class="listitem">WHAT WE OFFER</button>
+                        <button id="i3" class="listitem">EVENTS</button>
+                        <button id="i4" class="listitem">INQUIRY FORM</button>
+                        <button id="i5" class="listitem">CONTACT US</button> 
+                    </div>
+                </li>
+                <li>
+                    <img id="nevahlogo" src="logo.png">
+                </li>
+                <li>
+                    <button id="bookusb">BOOK US</button>
+                </li>
+            </ul>
+        </div>
+        <div id="title">
+            <h1>GET YOUR <br> NEVAH TODAY</h1>
+        </div>
+        <div id="titlep">
+            <p1>Our vision is to provide your event with a <br> home-like atmosphere where people can <br> meet, connect, and feel inspired <br> (with the help of caffeine).</p1>
+        </div>
+        <div id="city">
+            <p2>SEATTLE, WA</p2>
+        </div>
+        <div id="quote">
+            <button id="quote1">REQUEST A QUOTE</button>
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div id="ph1">
+            <img class="images" src="2.jpg">
+        </div>
+        <div id="au1">
+            <div class="content1">
+                <h2>ABOUT US</h2>
+                <p2>My husband and I started Nevah Coffee Co <br> in early 2023 after being married for a <br> few short years. We've always had a passion <br> to serve the community and <br> (in true Seattleite fashion) <br> have always loved to have a good cup of coffee.</p2> <br> <br>
+                <p2>Nevah began as a small dream to share <br> our love for the drink with the people <br> around us and quickly turned into a <br> full-time coffee catering service. <br> It's the perfect marriage of the two things <br> that we love the most: <br> meeting people's needs and enjoying good coffee!</p2>
+            </div>
+        </div>
+        <div id="ww2">
+            <div class="content1">
+                <h2 id="wwo">WHAT WE <br> OFFER</h2>
+                <P2>Espressos, Lattes, Cappuccinos, and More <br> Milk Alternatives <br> Homemade Syrups & Sauces <br> Alternative Drinks for Non-Coffee Drinkers</P2>
+            </div>
+        </div>
+        <div id="ph2">
+            <img class="images" src="3.jpg">
+        </div>
+        <div id="ph3">
+            <img class="images" src="4.jpg">
+        </div>
+        <div id="e3">
+            <div class="content1">
+                <h2>EVENTS</h2>
+                <p2>We cater to a variety of events <br> such as weddings, birthdays, bridal <br> and baby showers, corporate and <br> private events and more.</p2>
+            </div>
+        </div>
+    </div>
+    <div onsubmit="sendEmail(); reset(); return false;" class="wrapper3">
+        <div id="inqf">
+            <h2 id="iqform">INQUIRY FORM:</h2>
+        </div>    
+        <div id="form">
+            <form action="https://formsubmit.co/spaceveinz@gmail.com" method="POST">
+                <ul class="form1">
+                    <li><input type="text" id="name" placeholder="First and Last Name / Company" required></li>
+                    <li><input type="email" id="email" placeholder="Email" required></li>
+                    <li><input type="text" id="phonenumber" placeholder="Phone Number"></li>
+                    <li><input type="text" id="typeofevent" placeholder="Type of Event"></li>
+                    <li><input type="text" id="dateofevent" placeholder="Date of Event" required></li>
+                    <li><input type="text" id="loaction" placeholder="Location of Event" required></li>
+                    <li><input type="text" id="time" placeholder="Start and End Time of Service"></li>
+                    <li><input type="text" id="inorout" placeholder="Indoor or Outdoor"></li>
+                    <li><input type="text" id="numberofpeople" placeholder="Number of People" required></li>
+                    <li><input type="text" id="social" placeholder="Social Media Handle"></li>
+                    <li><input type="text" id="how" placeholder="How did you hear about us?"></li>
+                    <li><button id="submitb" type="submit" class="btns">SUBMIT</button></li>
+                </ul>
+            </form>
+            <!-- <div id="submitb">
+                <button type="submit" class="btns">SUBMIT</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="wrapper4">
+        <div id="cu1">
+            <div class="content1">
+                <h2 id="cuheader">CONTACT US</h2>
+                <p2>(425)409-9114 <br> contact@nevahcoffee.com <br> @nevahcoffeeco <br> SEATTLE, WA</p2>
+            </div>
+        </div>
+        <div id="ph4">
+            <img class="images" src="5.jpg">
+        </div>
+    </div>
+    <div class="wrapper5">
+        <div id="copyright">
+            <div class="content2">
+                <footer>Copyright © Nevah Coffee Co.</footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        const bookusb = document.querySelector("#bookusb");
+        const quote1 = document.querySelector("#quote1");
+        const i1 = document.querySelector("#i1")
+        const i2 = document.querySelector("#i2")
+        const i3 = document.querySelector("#i3")
+        const i4 = document.querySelector("#i4")
+        const i5 = document.querySelector("#i5")
+
+        bookusb.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 4000 }, 2000);
+        });
+        quote1.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 4000 }, 2000);
+        });
+        i1.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 970 }, 2000);
+        });
+        i2.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 1920 }, 2000);
+        });
+        i3.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 2870 }, 2000);
+        });
+        i4.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 4000 }, 2000);
+        });
+        i5.addEventListener("click", function() {
+            $("html, body").animate({scrollTop: 5659 }, 2000);
+        });
+    </script>
+</body>
+</html>
